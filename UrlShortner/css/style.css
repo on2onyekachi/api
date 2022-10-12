@@ -1,0 +1,152 @@
+/******************************************
+/* CSS
+/*******************************************/
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+}
+
+:root {
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Box-1: #ef476f;
+  --Box-3: #06d6a0;
+  --Box-4: #118ab2;
+  --Box-5: #af1bbd;
+  --Box-6: #1bdb4e;
+  --Box-7: #1426c7;
+  --Box-8: #b2116a;
+  --Box-9: #bdb110;
+  --gray-blak: #073b4c;
+  --first-glow: #00dcff;
+  --second-glow: #09889c;
+  --font-lexa: "Lexend Deca", sans-serif;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+body{
+  width: 100%;
+  background-color: rgb(150, 135, 235);
+  font-family: var(--font-lexa);
+}
+.container{
+  width: 41rem;
+  margin: 2rem auto;
+}
+.container .title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+}
+.container .title-message{
+  text-align: center;
+  margin:1rem 0;
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+.container .form{
+  margin-top: 1rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.form input{
+  flex: auto;
+  padding: 0.7rem;
+  border: none;
+  background-color: transparent;
+  outline: auto;
+  margin-right: 0.5rem;
+}
+.form .btn{
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  background-color: tomato;
+  cursor: pointer;
+  color: #fff;
+}
+.form .btn:hover{
+  background-color: var(--Box-1);
+}
+.container .lists{
+  margin: 2rem;
+  /* border-top: 4px solid black; */
+}
+.lists .list{
+  margin-top: 1rem;
+  display: flex;
+  /* gap: 2rem; */
+  border-radius: 0.5rem;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+  padding: 1rem 0.5rem;
+  position: relative;
+}
+.list .short-url{
+  font-size: 1.2rem;
+  color: #073b4c;
+}
+.list .links{
+  width: 17rem;
+}
+.list .main-url{
+  font-size: 0.67rem;
+  margin-top: 0.5rem;
+  transition: 0.3s all;
+}
+.list .copy{
+  color: #073b4c;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.list .copy:hover{
+  background: rgba(220, 243, 255, 0.692);
+  cursor: pointer;
+}
+.list .link-btn{
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--Box-3);
+  padding: 0.4rem 1rem;
+  border-radius: 2rem;
+}
+.list .link-btn:hover{
+  background-color: #79beac;
+}
+.list .delete{
+  position: absolute;
+  right: -2.0rem;
+  visibility: hidden;
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 50%;
+  transform: translateX(0px);
+  transition: all 0.6s;
+}
+.copy-input{
+  display: none;
+}
+.list .delete:hover{
+  background-color: rgba(250, 229, 229, 0.418);
+}
+.list:hover .delete{
+  visibility: visible;
+  transform: translateX(10px);
+}
