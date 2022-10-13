@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+		<title>Yobbok</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="./stylesheet/css/style.css">
+		<link rel="stylesheet" href="stylesheet/css/fa/all.css">
+		<link rel="stylesheet" href="./stylesheet/css/lib/bootstrap.min.css">
+	</head>
+	<body>
+		<main class="row" style="max-width: 70rem;">
+			<section class="search-container col-md-6">
+				<div>
+					<form>
+						<input type="text" placeholder="book title" name="" id="input">
+						<input type="submit" id="search" value="search">
+					</form>
+				</div>
+			</section>
+			<section class="book-info col-md-6">
+				<div>
+					<div class="book">
+						<div class="book-details">
+							<p class="holder" >Title</p>
+							<h2 class="book-title" id="title">Lorem ipsum dolor sit</h2>
+							<p class="book-read-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui minima</p>
+							<ul class="" >
+								<li>
+									<div class="icon">
+										<i class="fa fa-clone copy-icon"  aria-hidden="true"></i>
+									</div>
+									<div class="more">
+										<p class="holder">Published date</p>
+										<p class="info" id="date" >2022</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<i class="fa fa-clone copy-icon"  aria-hidden="true"></i>
+									</div>
+									<div class="more">
+										<p class="holder">ISBN-10</p>
+										<p class="info" id="ispn-10" >38793204345</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<i class="fa fa-clone copy-icon"  aria-hidden="true"></i>
+									</div>
+									<div class="more">
+										<p class="holder">ISBN-13</p>
+										<p class="info" id="ispn-13" >38793204345</p>
+									</div>
+								</li>
+							</ul>
+							<div class="autho-contain">
+								<img class="author-img" src="https://covers.openlibrary.org/a/olid/OL229501A-S.jpg" id="author-img" alt="">
+								<div class="more" >
+									<p class="holder">Author</p>
+									<p class="info">Onyekachi obi</p>
+								</div>
+							</div>
+						</div>
+						<div class="img-container">
+							<img src="./img/pokemon.jpeg" class="img" id="book-cover" alt="the author photo">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="./stylesheet/js/main.js"></script>
+	</body>
+</html>
