@@ -58,7 +58,6 @@ class Shortner {
 //display list in the DOM
 class UI{
     static displayData(){
-        console.log(urlListArr)
         let displayData =  urlListArr.map(item => {
             return `
             <div class="list">
@@ -98,7 +97,6 @@ class UI{
     static removeList(e){
         if(e.target.classList.contains('delete')){
             e.target.parentElement.remove()
-            console.log('deleted', e.target.parentElement)
         }
         let btnId = e.target.dataset.id
         // remove from array
@@ -108,11 +106,6 @@ class UI{
         urlListArr = urlListArr.filter(item => item.id !== +id)
         Storage.addTostorage(urlListArr)
     }
-    // static setIt(target){
-    //     return setTimeout(() => {
-    //         target.innerHTML = 'Copy'
-    //     }, 4000);
-    // }
 }
 
 window.addEventListener('DOMContentLoaded', ()=>{
